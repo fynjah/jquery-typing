@@ -1,9 +1,9 @@
 // jQuery-typing
 //
-// Version: 0.2.0
+// Version: 0.3.0
 // Website: http://narf.pl/jquery-typing/
 // License: public domain <http://unlicense.org/>
-// Author:  Maciej Konieczny <hello@narf.pl>
+// Author:  Maciej Konieczny <hello@narf.pl>, Mike Taylor <mike@bonuslevel.co.uk>
 
 (function ($) {
 
@@ -77,6 +77,10 @@
         // listen to blurs
         $elem.blur(function (event) {
             stopTyping(event, 0);
+        });
+        
+        $elem.bind('paste', function (event) {
+            startTyping(event);
         });
     }
 })(jQuery);

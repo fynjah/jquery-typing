@@ -28,8 +28,7 @@ defaults to 400. Regardless of `delay`'s value, the `stop` callback is
 called immediately when blur event occurs.
 
 Callbacks are passed two arguments: event that caused callback execution
-and jQuery object for matched element. Possible events are `keypress`
-or `keydown` for `start` callbacks and `keyup` or `blur` for `stop`
+and jQuery object for matched element. Possible events are `keypress`, `keydown` or `paste` for `start` callbacks and `keyup` or `blur` for `stop`
 callbacks.
 
 
@@ -43,7 +42,7 @@ Download
 --------
 
 Get production version from
-<http://narf.pl/jquery-typing/jquery.typing-0.2.0.min.js>
+<http://narf.pl/jquery-typing/jquery.typing-0.3.0.min.js>
 
 For development version visit [GitHub][].
 
